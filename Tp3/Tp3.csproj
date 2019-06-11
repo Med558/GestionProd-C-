@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5954B208-22BB-4D6D-9870-128FC2C2CF14}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tp3</RootNamespace>
+    <AssemblyName>Tp3</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BDStockDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDStockDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjouterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjouterClient.Designer.cs">
+      <DependentUpon>frmAjouterClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjouterFourn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjouterFourn.Designer.cs">
+      <DependentUpon>frmAjouterFourn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjouterProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjouterProd.Designer.cs">
+      <DependentUpon>frmAjouterProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindProd.Designer.cs">
+      <DependentUpon>frmFindProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeProd.Designer.cs">
+      <DependentUpon>frmListeProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapClient.Designer.cs">
+      <DependentUpon>frmRapClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listedesclient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listedesclient.Designer.cs">
+      <DependentUpon>Listedesclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listedesfactures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listedesfactures.Designer.cs">
+      <DependentUpon>listedesfactures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listefournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listefournisseur.Designer.cs">
+      <DependentUpon>listefournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nvfacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nvfacture.Designer.cs">
+      <DependentUpon>nvfacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjouterClient.resx">
+      <DependentUpon>frmAjouterClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjouterFourn.resx">
+      <DependentUpon>frmAjouterFourn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjouterProd.resx">
+      <DependentUpon>frmAjouterProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindProd.resx">
+      <DependentUpon>frmFindProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeProd.resx">
+      <DependentUpon>frmListeProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapClient.resx">
+      <DependentUpon>frmRapClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listedesclient.resx">
+      <DependentUpon>Listedesclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listedesfactures.resx">
+      <DependentUpon>listedesfactures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listefournisseur.resx">
+      <DependentUpon>listefournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nvfacture.resx">
+      <DependentUpon>nvfacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="BDStockDataSet.xsc">
+      <DependentUpon>BDStockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BDStockDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDStockDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDStockDataSet.xss">
+      <DependentUpon>BDStockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
